@@ -361,7 +361,7 @@
                 <span>{{restaurant.description}}</span>
                 <ul>
                     <li *ngFor="let dish of restaurant.dishes" style="margin-bottom: 0.33rem">
-                        <em>{{dish.Name}}</em> ({{dish.prices[0]?.value | currency:'EUR'}})
+                        <em>{{dish.dishName}}</em> ({{dish.prices[0]?.value | currency:'EUR'}})
                         <br>
                         {{dish.description}}
                     </li>
