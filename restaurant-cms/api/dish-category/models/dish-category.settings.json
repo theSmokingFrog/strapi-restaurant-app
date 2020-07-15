@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dish_categories",
+  "info": {
+    "name": "dishCategory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "dishes": {
+      "via": "dish_category",
+      "collection": "dish"
+    }
+  }
+}

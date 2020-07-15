@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dishes",
+  "info": {
+    "name": "Dish"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "dishName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text",
+      "required": false,
+      "unique": false
+    },
+    "prices": {
+      "type": "component",
+      "repeatable": true,
+      "component": "payment.price",
+      "required": true
+    },
+    "restaurant": {
+      "model": "restaurant",
+      "via": "dishes"
+    },
+    "menuid": {
+      "type": "integer",
+      "required": false
+    },
+    "dish_category": {
+      "model": "dish-category",
+      "via": "dishes"
+    }
+  }
+}

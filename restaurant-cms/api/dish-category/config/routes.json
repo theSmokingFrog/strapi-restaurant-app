@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dish-categories",
+      "handler": "dish-category.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dish-categories/count",
+      "handler": "dish-category.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dish-categories/:id",
+      "handler": "dish-category.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dish-categories",
+      "handler": "dish-category.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dish-categories/:id",
+      "handler": "dish-category.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dish-categories/:id",
+      "handler": "dish-category.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

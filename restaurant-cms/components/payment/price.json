@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_payment_prices",
+  "info": {
+    "name": "Price",
+    "icon": "money-bill"
+  },
+  "options": {},
+  "attributes": {
+    "Size": {
+      "type": "enumeration",
+      "enum": [
+        "Small",
+        "Medium",
+        "Large"
+      ],
+      "unique": false
+    },
+    "value": {
+      "type": "decimal",
+      "required": true,
+      "unique": false
+    }
+  }
+}
